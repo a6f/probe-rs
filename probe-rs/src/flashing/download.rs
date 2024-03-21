@@ -11,6 +11,8 @@ use std::{
     str::FromStr,
 };
 
+use std::sync::Arc;
+
 use super::*;
 use crate::session::Session;
 
@@ -202,6 +204,10 @@ pub struct DownloadOptions {
     pub verify: bool,
     /// Disable double buffering when loading flash.
     pub disable_double_buffering: bool,
+    /// Preparation routine to run on the core before executing the flash algorithm.
+    /// If supplied, the core is not otherwise reset.
+    pub prepare_core:
+        Option<Arc<dyn Fn(&mut crate::Core, &FlashAlgorithm) -> Result<(), crate::Error>>>,
 }
 
 impl DownloadOptions {

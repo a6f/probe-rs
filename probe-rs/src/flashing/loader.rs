@@ -506,7 +506,7 @@ impl FlashLoader {
             let algo = session.target().flash_algorithm_by_name(algo_name);
             let algo = algo.unwrap().clone();
 
-            let flasher = Flasher::new(session, *core, &algo, progress.clone())?;
+            let flasher = Flasher::new(session, *core, None, &algo, progress.clone())?;
             // If the first flash algo doesn't support erase all, disable chip erase.
             // TODO: we could sort by support but it's unlikely to make a difference.
             if do_chip_erase && !flasher.is_chip_erase_supported() {
@@ -535,7 +535,13 @@ impl FlashLoader {
             let algo = session.target().flash_algorithm_by_name(&algo_name);
             let algo = algo.unwrap().clone();
 
-            let mut flasher = Flasher::new(session, core, &algo, progress.clone())?;
+            let mut flasher = Flasher::new(
+                session,
+                core,
+                options.prepare_core.clone(),
+                &algo,
+                progress.clone(),
+            )?;
 
             if do_chip_erase {
                 tracing::debug!("    Doing chip erase...");
