@@ -1,9 +1,6 @@
 name: STM32U5 Series
-manufacturer:
-  id: 0x20
-  cc: 0x0
 generated_from_pack: true
-pack_file_release: 2.1.0
+pack_file_release: 2.2.1
 variants:
 - name: STM32U535CBTx
   cores:
@@ -5496,6 +5493,823 @@ variants:
   - mx25lm51245g_stm32u575i-eval
   - mx25lm51245g_stm32u585i_iot02a
   - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F7VITx
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8200000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_2m_0800
+  - stm32u5fx_2m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F7VITxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8200000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_2m_0800
+  - stm32u5fx_2m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F7VJTx
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F7VJTxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9BJYxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9NJHxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9VITxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8200000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_2m_0800
+  - stm32u5fx_2m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9VJTxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9ZIJxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8200000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_2m_0800
+  - stm32u5fx_2m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9ZITxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8200000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_2m_0800
+  - stm32u5fx_2m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9ZJJxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5F9ZJTxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G7VJTx
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G7VJTxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G9BJYxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  - !Generic
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G9NJHxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  - !Generic
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G9VJTxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  - !Generic
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G9ZJJxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  - !Generic
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
+- name: STM32U5G9ZJTxQ
+  cores:
+  - name: main
+    type: armv8m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: SRAM12356
+    range:
+      start: 0x20000000
+      end: 0x20270000
+    cores:
+    - main
+  - !Ram
+    name: SRAM4
+    range:
+      start: 0x28000000
+      end: 0x28004000
+    cores:
+    - main
+  - !Nvm
+    name: Flash
+    range:
+      start: 0x8000000
+      end: 0x8400000
+    is_boot_memory: true
+    cores:
+    - main
+  - !Generic
+    name: SRAM_GFXMM
+    range:
+      start: 0x24000000
+      end: 0x25000000
+    cores:
+    - main
+  flash_algorithms:
+  - stm32u5fx_4m_0800
+  - stm32u5fx_4m_0c00
+  - mx25lm51245g_stm32u575i-eval
+  - mx25lm51245g_stm32u585i_iot02a
+  - mx25lm51245g_stm32u599j-dk
 flash_algorithms:
 - name: stm32u5xx_128k_0800
   description: STM32U5xx 128K NSecure Flash
@@ -5857,6 +6671,94 @@ flash_algorithms:
   pc_erase_sector: 0xed
   pc_erase_all: 0xbf
   data_section_offset: 0x220
+  flash_properties:
+    address_range:
+      start: 0xc000000
+      end: 0xc400000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 400
+    erase_sector_timeout: 400
+    sectors:
+    - size: 0x2000
+      address: 0x0
+- name: stm32u5fx_2m_0800
+  description: STM32U5Fx 2M NSecure Flash
+  default: true
+  instructions: sLVC8kAFBEbE8gIFAPDG+ihoACgV1FX4GAyw8f8/C9xA8iMQxPJnUEX4OAxI9qsQzPbvUEX4OAxV+CAMwAP71CbgK2hI9qsQQPIjEcz271DE8mdRT/D/MpsCKmRqZKpk6mQI1EX4NBxF+DQMVfgcDMAD+9QM4CpmamaqZupmRfg0HEX4NAwAv1X4HAzAA/vUKGjAsqooJdBC9jsgwPYZAEX4MAxG9n9gxPZdQEX4MAwoaCDw/wAoYChoQPCqAChgVfgYDED0gDBF+BgMVfgYDEDwAGBF+BgMv/NPj1X4GAwAAfvUVfggDMAD+9RA8ggAwPIAAEn4AEBA8qBwwPb6MABoT/YAQcDy/zEB6oAgQPIQAcDyAAFJ+AEAQPIEAUAIwPIAAUn4AQAoaChoQPIMAoACT/QAUcDyAAJP8AAAWL9P9IBBSfgCELC9AL9C8igAxPICAIFpACkE1AFoQfAAQQFgA+BBaEHwAEFBYAAgv/NPj3BHELVC8igExPICBADwDfqgabDx/z8a3QC/VPgEDMAD+9RE8vowRPgIDCBoSPIEAQhDIGAgaED0gDAgYL/zT48Av1T4CAzAA/vUFuAAv1T4BAzAA/vURPL6MET4BAxI8gQAYGBgaED0gDBgYL/zT48Av1T4BAzAA/vUIGgg8AQAIGAgaCD0AEEAICFgEL2wtULyKAUERsTyAgUA8Mb5oA4CKIi/BPF8RKhpqWkAKAH0ABAC1CC5oAsR4GC7oAs54ChotPEBb0DwAgAoYCloT+pUMDS/IfQAYUH0AGEpYClowLIh9P9hKWApaEHqwAAoYChoQPSAMChgAL9V+AgMwAP71FX4CAyABy/UKGgg8AIAKGAAILC9aGi08QFvQPACAGhgaWhP6lQwNL8h9ABhQfQAYWlgaWjAsiH0/2FpYGloQerAAGhgaGhA9IAwaGBV+AQMwAP71FX4BAyABwXUaGgg8AIAaGAAILC9ASCwvS3p8E2EsELyIAcVRopGg0bE8gIHAPAHBgDwUPlE8vo4x/gAgDhqCvEPAQAoIfAPAE/wAQFy1AKsuWBhHgGRAL8AKADw4IAHKDzZQPL/ETlgNrOr6wYBACKLXKNUATKWQvrRxvEIDAEjvPEBD4i/Y0YBmgE9FkQAvxX4AS8BOwb4AS/50QE1AL86aNID/NTd6QIjoOsMAONECmBLYAC/AL85aMkD/NQpaAg4y/gAEGloCDXL+AQQC/EICwAmAL8AvyDgAL9P8AAKFfgKEAT4ChAK8QEKUEX30cDxCAEBIiBEASmYvxFG/yIA8Jf4VUQAvzhowAP81N3pAgHL+AAAy/gEEAAgOWjJA/zUOWgR6ggPP/SWr0Ty+jA4YHDgAqz5YGEeAZEAKHPQByg92UDy/xF5YD6zq+sGAQAiAL+LXKNUATKWQvrRxvEIDAEjvPEBD4i/Y0YBmgE9FkQAvxX4AS8BOwb4AS/50QE1AL96aNID/NTd6QIjoOsMAONECmBLYAC/AL95aMkD/NQpaAg4y/gAEGloCDXL+AQQC/EICwAmAL8AvyDgAL9P8AAKFfgKEAT4ChAK8QEKUEX30cDxCAEBIiBEASmYvxFG/yIA8CX4VUQAv3howAP81N3pAgHL+AAAy/gEEAAgeWjJA/zUeWgR6ggPP/SWr0Ty+jB4YAEgBLC96PCNACC4YASwvejwjQAg+GAEsL3o8I0C8P8DQ+oDIkLqAkIA8AK4T/AAAgQpwPASgBDwAwwA8BuAzPEEDLzxAg8YvwD4ASuovyD4Aiuh6wwBAPANuF/qwXwkvwD4ASsA+AErSL8A+AErcEdP8AACALUTRpRGlkYgOSK/oOgMUKDoDFCx8SABv/T3rwkHKL+g6AxQSL8MwF34BOuJACi/QPgEKwi/cEdIvyD4AisR8IBPGL8A+AErcEfv8xCAAPABAHK2cEcAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  load_address: 0x20000020
+  pc_init: 0x1
+  pc_uninit: 0x14d
+  pc_program_page: 0x2e1
+  pc_erase_sector: 0x201
+  pc_erase_all: 0x175
+  data_section_offset: 0x5a8
+  flash_properties:
+    address_range:
+      start: 0x8000000
+      end: 0x8200000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 400
+    erase_sector_timeout: 400
+    sectors:
+    - size: 0x2000
+      address: 0x0
+- name: stm32u5fx_2m_0c00
+  description: STM32U5Fx 2M NSecure Flash
+  default: true
+  instructions: sLVC8kAFBEbE8gIFAPDG+ihoACgV1FX4GAyw8f8/C9xA8iMQxPJnUEX4OAxI9qsQzPbvUEX4OAxV+CAMwAP71CbgK2hI9qsQQPIjEcz271DE8mdRT/D/MpsCKmRqZKpk6mQI1EX4NBxF+DQMVfgcDMAD+9QM4CpmamaqZupmRfg0HEX4NAwAv1X4HAzAA/vUKGjAsqooJdBC9jsgwPYZAEX4MAxG9n9gxPZdQEX4MAwoaCDw/wAoYChoQPCqAChgVfgYDED0gDBF+BgMVfgYDEDwAGBF+BgMv/NPj1X4GAwAAfvUVfggDMAD+9RA8ggAwPIAAEn4AEBA8qBwwPb6MABoT/YAQcDy/zEB6oAgQPIQAcDyAAFJ+AEAQPIEAUAIwPIAAUn4AQAoaChoQPIMAoACT/QAUcDyAAJP8AAAWL9P9IBBSfgCELC9AL9C8igAxPICAIFpACkE1AFoQfAAQQFgA+BBaEHwAEFBYAAgv/NPj3BHELVC8igExPICBADwDfqgabDx/z8a3QC/VPgEDMAD+9RE8vowRPgIDCBoSPIEAQhDIGAgaED0gDAgYL/zT48Av1T4CAzAA/vUFuAAv1T4BAzAA/vURPL6MET4BAxI8gQAYGBgaED0gDBgYL/zT48Av1T4BAzAA/vUIGgg8AQAIGAgaCD0AEEAICFgEL2wtULyKAUERsTyAgUA8Mb5oA4CKIi/BPF8RKhpqWkAKAH0ABAC1CC5oAsR4GC7oAs54ChotPEBb0DwAgAoYCloT+pUMDS/IfQAYUH0AGEpYClowLIh9P9hKWApaEHqwAAoYChoQPSAMChgAL9V+AgMwAP71FX4CAyABy/UKGgg8AIAKGAAILC9aGi08QFvQPACAGhgaWhP6lQwNL8h9ABhQfQAYWlgaWjAsiH0/2FpYGloQerAAGhgaGhA9IAwaGBV+AQMwAP71FX4BAyABwXUaGgg8AIAaGAAILC9ASCwvS3p8E2EsELyIAcVRopGg0bE8gIHAPAHBgDwUPlE8vo4x/gAgDhqCvEPAQAoIfAPAE/wAQFy1AKsuWBhHgGRAL8AKADw4IAHKDzZQPL/ETlgNrOr6wYBACKLXKNUATKWQvrRxvEIDAEjvPEBD4i/Y0YBmgE9FkQAvxX4AS8BOwb4AS/50QE1AL86aNID/NTd6QIjoOsMAONECmBLYAC/AL85aMkD/NQpaAg4y/gAEGloCDXL+AQQC/EICwAmAL8AvyDgAL9P8AAKFfgKEAT4ChAK8QEKUEX30cDxCAEBIiBEASmYvxFG/yIA8Jf4VUQAvzhowAP81N3pAgHL+AAAy/gEEAAgOWjJA/zUOWgR6ggPP/SWr0Ty+jA4YHDgAqz5YGEeAZEAKHPQByg92UDy/xF5YD6zq+sGAQAiAL+LXKNUATKWQvrRxvEIDAEjvPEBD4i/Y0YBmgE9FkQAvxX4AS8BOwb4AS/50QE1AL96aNID/NTd6QIjoOsMAONECmBLYAC/AL95aMkD/NQpaAg4y/gAEGloCDXL+AQQC/EICwAmAL8AvyDgAL9P8AAKFfgKEAT4ChAK8QEKUEX30cDxCAEBIiBEASmYvxFG/yIA8CX4VUQAv3howAP81N3pAgHL+AAAy/gEEAAgeWjJA/zUeWgR6ggPP/SWr0Ty+jB4YAEgBLC96PCNACC4YASwvejwjQAg+GAEsL3o8I0C8P8DQ+oDIkLqAkIA8AK4T/AAAgQpwPASgBDwAwwA8BuAzPEEDLzxAg8YvwD4ASuovyD4Aiuh6wwBAPANuF/qwXwkvwD4ASsA+AErSL8A+AErcEdP8AACALUTRpRGlkYgOSK/oOgMUKDoDFCx8SABv/T3rwkHKL+g6AxQSL8MwF34BOuJACi/QPgEKwi/cEdIvyD4AisR8IBPGL8A+AErcEfv8xCAAPABAHK2cEcAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  load_address: 0x20000020
+  pc_init: 0x1
+  pc_uninit: 0x14d
+  pc_program_page: 0x2e1
+  pc_erase_sector: 0x201
+  pc_erase_all: 0x175
+  data_section_offset: 0x5a8
+  flash_properties:
+    address_range:
+      start: 0xc000000
+      end: 0xc200000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 400
+    erase_sector_timeout: 400
+    sectors:
+    - size: 0x2000
+      address: 0x0
+- name: stm32u5fx_4m_0800
+  description: STM32U5Fx 4M NSecure Flash
+  default: true
+  instructions: sLVC8kAFBEbE8gIFAPC4+ihoACgV1FX4GAyw8f8/C9xA8iMQxPJnUEX4OAxI9qsQzPbvUEX4OAxV+CAMwAP71CbgK2hI9qsQQPIjEcz271DE8mdRT/D/MpsCKmRqZKpk6mQI1EX4NBxF+DQMVfgcDMAD+9QM4CpmamaqZupmRfg0HEX4NAwAv1X4HAzAA/vUKGjAsqooJdBC9jsgwPYZAEX4MAxG9n9gxPZdQEX4MAwoaCDw/wAoYChoQPCqAChgVfgYDED0gDBF+BgMVfgYDEDwAGBF+BgMv/NPj1X4GAwAAfvUVfggDMAD+9RA8ggAwPIAAEn4AEBA8qBwwPb6MABoT/YAQcDy/zEB6oAgQPIQAcDyAAFJ+AEAQPIEAUAIwPIAAUn4AQAoaChoQPIMAoACT/QAUcDyAAJP8AAAWL9P9IBBSfgCELC9AL9C8igAxPICAIFpACkE1AFoQfAAQQFgA+BBaEHwAEFBYAAgv/NPj3BHELVC8igExPICBADw//mgabDx/z8a3QC/VPgEDMAD+9RE8vowRPgIDCBoSPIEAQhDIGAgaED0gDAgYL/zT48Av1T4CAzAA/vUFuAAv1T4BAzAA/vURPL6MET4BAxI8gQAYGBgaED0gDBgYL/zT48Av1T4BAzAA/vUIGgg8AQAIGAgaCD0AEEAICFgEL2wtULyKAUERsTyAgUA8Lj5oA4CKIi/BPF8RKlpYg1P9P9gACNAKgDqlCCIvwEjAClP6sMhItQqaELwAgIqYCpoIvQAYhFDKWApaCH0/2EpYCloCEMoYChoQPSAMChgAL9V+AgMwAP71FX4CAyAByfUKGgg8AIAKGAAILC9amhC8AICamBqaCL0AGIRQ2lgaWgh9P9haWBpaAhDaGBoaED0gDBoYFX4BAzAA/vUVfgEDIAHBdRoaCDwAgBoYAAgsL0BILC9LenwTYSwQvIgBxVGikaDRsTyAgcA8AcGAPBQ+UTy+jjH+ACAOGoK8Q8BACgh8A8AT/ABAXLUAqy5YGEeAZEAvwAoAPDggAcoPNlA8v8ROWA2s6vrBgEAIotco1QBMpZC+tHG8QgMASO88QEPiL9jRgGaAT0WRAC/FfgBLwE7BvgBL/nRATUAvzpo0gP81N3pAiOg6wwA40QKYEtgAL8AvzloyQP81CloCDjL+AAQaWgINcv4BBAL8QgLACYAvwC/IOAAv0/wAAoV+AoQBPgKEArxAQpQRffRwPEIAQEiIEQBKZi/EUb/IgDwl/hVRAC/OGjAA/zU3ekCAcv4AADL+AQQACA5aMkD/NQ5aBHqCA8/9JavRPL6MDhgcOACrPlgYR4BkQAoc9AHKD3ZQPL/EXlgPrOr6wYBACIAv4tco1QBMpZC+tHG8QgMASO88QEPiL9jRgGaAT0WRAC/FfgBLwE7BvgBL/nRATUAv3po0gP81N3pAiOg6wwA40QKYEtgAL8Av3loyQP81CloCDjL+AAQaWgINcv4BBAL8QgLACYAvwC/IOAAv0/wAAoV+AoQBPgKEArxAQpQRffRwPEIAQEiIEQBKZi/EUb/IgDwJfhVRAC/eGjAA/zU3ekCAcv4AADL+AQQACB5aMkD/NR5aBHqCA8/9JavRPL6MHhgASAEsL3o8I0AILhgBLC96PCNACD4YASwvejwjQLw/wND6gMiQuoCQgDwArhP8AACBCnA8BKAEPADDADwG4DM8QQMvPECDxi/APgBK6i/IPgCK6HrDAEA8A24X+rBfCS/APgBKwD4AStIvwD4AStwR0/wAAIAtRNGlEaWRiA5Ir+g6AxQoOgMULHxIAG/9PevCQcov6DoDFBIvwzAXfgE64kAKL9A+AQrCL9wR0i/IPgCKxHwgE8YvwD4AStwR+/zEIAA8AEAcrZwRwAAAAAAAAAAAAAAAAAAAAAAAAAA
+  load_address: 0x20000020
+  pc_init: 0x1
+  pc_uninit: 0x14d
+  pc_program_page: 0x2c5
+  pc_erase_sector: 0x201
+  pc_erase_all: 0x175
+  data_section_offset: 0x58c
+  flash_properties:
+    address_range:
+      start: 0x8000000
+      end: 0x8400000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 400
+    erase_sector_timeout: 400
+    sectors:
+    - size: 0x2000
+      address: 0x0
+- name: stm32u5fx_4m_0c00
+  description: STM32U5Fx 4M Secure Flash
+  default: true
+  instructions: sLVC8kAFBEbE8gIFAPC4+ihoACgV1FX4GAyw8f8/C9xA8iMQxPJnUEX4OAxI9qsQzPbvUEX4OAxV+CAMwAP71CbgK2hI9qsQQPIjEcz271DE8mdRT/D/MpsCKmRqZKpk6mQI1EX4NBxF+DQMVfgcDMAD+9QM4CpmamaqZupmRfg0HEX4NAwAv1X4HAzAA/vUKGjAsqooJdBC9jsgwPYZAEX4MAxG9n9gxPZdQEX4MAwoaCDw/wAoYChoQPCqAChgVfgYDED0gDBF+BgMVfgYDEDwAGBF+BgMv/NPj1X4GAwAAfvUVfggDMAD+9RA8ggAwPIAAEn4AEBA8qBwwPb6MABoT/YAQcDy/zEB6oAgQPIQAcDyAAFJ+AEAQPIEAUAIwPIAAUn4AQAoaChoQPIMAoACT/QAUcDyAAJP8AAAWL9P9IBBSfgCELC9AL9C8igAxPICAIFpACkE1AFoQfAAQQFgA+BBaEHwAEFBYAAgv/NPj3BHELVC8igExPICBADw//mgabDx/z8a3QC/VPgEDMAD+9RE8vowRPgIDCBoSPIEAQhDIGAgaED0gDAgYL/zT48Av1T4CAzAA/vUFuAAv1T4BAzAA/vURPL6MET4BAxI8gQAYGBgaED0gDBgYL/zT48Av1T4BAzAA/vUIGgg8AQAIGAgaCD0AEEAICFgEL2wtULyKAUERsTyAgUA8Lj5oA4CKIi/BPF8RKlpYg1P9P9gACNAKgDqlCCIvwEjAClP6sMhItQqaELwAgIqYCpoIvQAYhFDKWApaCH0/2EpYCloCEMoYChoQPSAMChgAL9V+AgMwAP71FX4CAyAByfUKGgg8AIAKGAAILC9amhC8AICamBqaCL0AGIRQ2lgaWgh9P9haWBpaAhDaGBoaED0gDBoYFX4BAzAA/vUVfgEDIAHBdRoaCDwAgBoYAAgsL0BILC9LenwTYSwQvIgBxVGikaDRsTyAgcA8AcGAPBQ+UTy+jjH+ACAOGoK8Q8BACgh8A8AT/ABAXLUAqy5YGEeAZEAvwAoAPDggAcoPNlA8v8ROWA2s6vrBgEAIotco1QBMpZC+tHG8QgMASO88QEPiL9jRgGaAT0WRAC/FfgBLwE7BvgBL/nRATUAvzpo0gP81N3pAiOg6wwA40QKYEtgAL8AvzloyQP81CloCDjL+AAQaWgINcv4BBAL8QgLACYAvwC/IOAAv0/wAAoV+AoQBPgKEArxAQpQRffRwPEIAQEiIEQBKZi/EUb/IgDwl/hVRAC/OGjAA/zU3ekCAcv4AADL+AQQACA5aMkD/NQ5aBHqCA8/9JavRPL6MDhgcOACrPlgYR4BkQAoc9AHKD3ZQPL/EXlgPrOr6wYBACIAv4tco1QBMpZC+tHG8QgMASO88QEPiL9jRgGaAT0WRAC/FfgBLwE7BvgBL/nRATUAv3po0gP81N3pAiOg6wwA40QKYEtgAL8Av3loyQP81CloCDjL+AAQaWgINcv4BBAL8QgLACYAvwC/IOAAv0/wAAoV+AoQBPgKEArxAQpQRffRwPEIAQEiIEQBKZi/EUb/IgDwJfhVRAC/eGjAA/zU3ekCAcv4AADL+AQQACB5aMkD/NR5aBHqCA8/9JavRPL6MHhgASAEsL3o8I0AILhgBLC96PCNACD4YASwvejwjQLw/wND6gMiQuoCQgDwArhP8AACBCnA8BKAEPADDADwG4DM8QQMvPECDxi/APgBK6i/IPgCK6HrDAEA8A24X+rBfCS/APgBKwD4AStIvwD4AStwR0/wAAIAtRNGlEaWRiA5Ir+g6AxQoOgMULHxIAG/9PevCQcov6DoDFBIvwzAXfgE64kAKL9A+AQrCL9wR0i/IPgCKxHwgE8YvwD4AStwR+/zEIAA8AEAcrZwRwAAAAAAAAAAAAAAAAAAAAAAAAAA
+  load_address: 0x20000020
+  pc_init: 0x1
+  pc_uninit: 0x14d
+  pc_program_page: 0x2c5
+  pc_erase_sector: 0x201
+  pc_erase_all: 0x175
+  data_section_offset: 0x58c
   flash_properties:
     address_range:
       start: 0xc000000
