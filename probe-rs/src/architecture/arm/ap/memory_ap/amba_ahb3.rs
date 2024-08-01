@@ -31,6 +31,8 @@ impl AmbaAhb3 {
         let me = Self { address, csw, cfg };
         let csw = CSW {
             AddrInc: AddressIncrement::Single,
+            // Necessary for AP1 on STM32N6.
+            HNONSEC: false,
             ..me.csw
         };
         probe.write_ap_register(&me, csw)?;
