@@ -33,12 +33,16 @@ enum TraceFunnelId {
 
 /// Marker struct indicating initialization sequencing for STM32H7 family parts.
 #[derive(Debug)]
-pub struct Stm32h7 {}
+pub struct Stm32h7 {
+    ap: u8,
+}
 
 impl Stm32h7 {
     /// Create the sequencer for the H7 family of parts.
-    pub fn create() -> Arc<Self> {
-        Arc::new(Self {})
+    /// Most H7 variants have the debug unit on AP2.
+    /// The H7S/R lack power domain 3 and the third AP; their debug unit is on AP1.
+    pub fn create(ap: u8) -> Arc<Self> {
+        Arc::new(Self { ap })
     }
 
     /// Configure all debug components on the chip.
@@ -151,8 +155,8 @@ impl ArmDebugSequence for Stm32h7 {
         _default_ap: &FullyQualifiedApAddress,
         _permissions: &crate::Permissions,
     ) -> Result<(), ArmError> {
-        // Power up the debug components through AP2, which is the default AP debug port.
-        let ap = &FullyQualifiedApAddress::v1_with_default_dp(2);
+        // Power up the debug components through selected AP.
+        let ap = &FullyQualifiedApAddress::v1_with_default_dp(self.ap);
 
         let mut memory = interface.memory_interface(ap)?;
         self.enable_debug_components(&mut *memory, true)?;
@@ -165,7 +169,7 @@ impl ArmDebugSequence for Stm32h7 {
         memory: &mut dyn ArmMemoryInterface,
         _core_type: CoreType,
     ) -> Result<(), ArmError> {
-        // Power down the debug components through AP2, which is the default AP debug port.
+        // Power down the debug components through selected AP.
 
         self.enable_debug_components(&mut *memory, false)?;
 
